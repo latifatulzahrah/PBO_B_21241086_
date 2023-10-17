@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-16 10:07:53 AM"/>
+        <attribute name="created" value="QVNVUztIQUpBUjIyOzIwMjMtMTAtMTU7MTE6NDg6NDUgUE07MjA1NQ=="/>
+        <attribute name="edited" value="QVNVUztIQUpBUjIyOzIwMjMtMTAtMTY7MTA6MDc6NTMgQU07MjsyMTQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rahasia, tebak, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;silahkan masukkan angka rahasia&quot;" newline="True"/>
+            <output expression="&quot;angkanya pilih dari 1 sampai 100 yaaa&quot;" newline="True"/>
+            <input variable="rahasia"/>
+            <output expression="&quot;silahkan anda masukkan angka dari 1 sampai 100 sebagai salah satu clue untuk menebak angka rahasiaaa&quot;" newline="True"/>
+            <output expression="&quot;ayo mulai masukan angka tebakkannya sekarang yaaa&quot;" newline="True"/>
+            <for variable="i" start="1" end="3" direction="inc" step="1">
+                <output expression="&quot;silahkan masukkan tebakan ke-&quot;&amp;tostring(i)" newline="True"/>
+                <input variable="tebak"/>
+                <if expression="tebak=rahasia">
+                    <then>
+                        <output expression="&quot;BENAR!!!! angka rahasiannya ialah&quot;&amp;tostring(rahasia)" newline="True"/>
+                        <output expression="&quot;selamat yaa buat kamuu keren banget bisa nebak dalam&quot;&amp;tostring(i)&amp;&quot;kali tebakan&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="tebak&gt;rahasia">
+                            <then>
+                                <output expression="&quot;tebakan kamu terlalu besar&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;tebakan kamu terlalu kecil&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <if expression="i=3">
+                            <then>
+                                <output expression="&quot;astagfirullah anda gagal, gpp ya coba di lain waktu lagi, soalnya anda sudah menebak sebanyak 3 kali tapii tebakan anda salah.angka rahasiannya ialah&quot;&amp;tostring(rahasia)" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

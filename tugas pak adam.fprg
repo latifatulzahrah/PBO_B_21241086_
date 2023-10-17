@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 11:48:39 PM"/>
+        <attribute name="created" value="QVNVUztIQUpBUjIyOzIwMjMtMTAtMTU7MDc6MzA6NTcgUE07MjA1NA=="/>
+        <attribute name="edited" value="QVNVUztIQUpBUjIyOzIwMjMtMTAtMTU7MTE6NDg6MzkgUE07ODsyMTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rahasia, tebak, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;silahkan pilih dan masukkan angka rahasia 1-100&quot;" newline="True"/>
+            <input variable="rahasia"/>
+            <output expression="&quot;silahkan mulai masukkan tebakkan andaa&quot;" newline="True"/>
+            <output expression="&quot;anda memiliki kesempatan menebak sebanyak 3 kali yaaa&quot;" newline="True"/>
+            <do expression="tebak!=rahasia">
+                <input variable="tebak"/>
+                <if expression="tebak &gt; rahasia">
+                    <then>
+                        <output expression="&quot;tebakanmu terlalu besar&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="tebak &lt; rahasia">
+                    <then>
+                        <output expression="&quot;tebakanmu terlalu kecil&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot; selamat yaaa, tebakan anda benar!!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
